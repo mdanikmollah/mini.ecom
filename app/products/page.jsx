@@ -48,7 +48,8 @@ export default async function page() {
       </div>
     </div>
   </div>
-</div>);
+</div>
+);
   return (
     <>
     <div className="bg-gray-100">
