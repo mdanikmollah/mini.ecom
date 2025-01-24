@@ -260,6 +260,7 @@ export default function Checkout() {
                         <option>France</option>
                         <option>Belgium</option>
                         <option>Japan</option>
+                        <option>Bangladesh</option>
                       </select>
                     </div>
 
