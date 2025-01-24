@@ -102,14 +102,16 @@ export default function Checkout() {
                 >
                 <span className="sr-only">Remove</span>
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-4 h-4">
-  <path strokeLinecap="round" strokeLinejoin="round" d="M14.74 9l-.346 9m-4.788 0L9.26 9m9.968-3.21c.342.052.682.107 1.022.166m-1.022-.165L18.16 19.673a2.25 2.25 0 01-2.244 2.077H8.084a2.25 2.25 0 01-2.244-2.077L4.772 5.79m14.456 0a48.108 48.108 0 00-3.478-.397m-12 .562c.34-.059.68-.114 1.022-.165m0 0a48.11 48.11 0 013.478-.397m7.5 0v-.916c0-1.18-.91-2.164-2.09-2.201a51.964 51.964 0 00-3.32 0c-1.18.037-2.09 1.022-2.09 2.201v.916m7.5 0a48.667 48.667 0 00-7.5 0" />
-</svg>
+                <path strokeLinecap="round" strokeLinejoin="round" d="M14.74 9l-.346 9m-4.788 0L9.26 9m9.968-3.21c.342.052.682.107 1.022.166m-1.022-.165L18.16 19.673a2.25 2.25 0 01-2.244 2.077H8.084a2.25 2.25 0 01-2.244-2.077L4.772 5.79m14.456 0a48.108 48.108 0 00-3.478-.397m-12 .562c.34-.059.68-.114 1.022-.165m0 0a48.11 48.11 0 013.478-.397m7.5 0v-.916c0-1.18-.91-2.164-2.09-2.201a51.964 51.964 0 00-3.32 0c-1.18.037-2.09 1.022-2.09 2.201v.916m7.5 0a48.667 48.667 0 00-7.5 0" />
+                </svg>
 
             </button>
 
         </div>
-      </li>);
-        });
+      </li>
+      );
+        
+    });
     }
     const calculateTotal = () =>
     {
@@ -123,171 +125,171 @@ export default function Checkout() {
       <section className='mt-1'>
         <h1 className="sr-only">Checkout</h1>
         <div className="mx-auto grid max-w-screen h-screen grid-cols-1 md:grid-cols-2">
-        <div className="bg-white py-12 md:py-24 ">
-            <div className="mx-auto max-w-lg sm:max-w-2xl px-4 lg:px-8">
-              <h3 className='mb-5'>Shipping details</h3>
-              <form className="grid grid-cols-6 gap-4">
-                <div className="col-span-3">
-                  <label
-                    htmlFor="FirstName"
-                    className="block text-xs font-medium text-gray-700"
-                  >
-                    First Name
-                  </label>
+          <div className="bg-white py-12 md:py-24 ">
+              <div className="mx-auto max-w-lg sm:max-w-2xl px-4 lg:px-8">
+                <h3 className='mb-5'>Shipping details</h3>
+                <form className="grid grid-cols-6 gap-4">
+                  <div className="col-span-3">
+                    <label
+                      htmlFor="FirstName"
+                      className="block text-xs font-medium text-gray-700"
+                    >
+                      First Name
+                    </label>
 
-                  <input
-                    type="text"
-                    id="FirstName"
-                    className="mt-1 w-full rounded-md border-gray-200 shadow-sm sm:text-sm"
-                  />
-                </div>
+                    <input
+                      type="text"
+                      id="FirstName"
+                      className="mt-1 w-full rounded-md border-gray-200 shadow-sm sm:text-sm"
+                    />
+                  </div>
 
-                <div className="col-span-3">
-                  <label
-                    htmlFor="LastName"
-                    className="block text-xs font-medium text-gray-700"
-                  >
-                    Last Name
-                  </label>
+                  <div className="col-span-3">
+                    <label
+                      htmlFor="LastName"
+                      className="block text-xs font-medium text-gray-700"
+                    >
+                      Last Name
+                    </label>
 
-                  <input
-                    type="text"
-                    id="LastName"
-                    className="mt-1 w-full rounded-md border-gray-200 shadow-sm sm:text-sm"
-                  />
-                </div>
+                    <input
+                      type="text"
+                      id="LastName"
+                      className="mt-1 w-full rounded-md border-gray-200 shadow-sm sm:text-sm"
+                    />
+                  </div>
 
-                <div className="col-span-6">
-                  <label
-                    htmlFor="Email"
-                    className="block text-xs font-medium text-gray-700"
-                  >
-                    Email
-                  </label>
+                  <div className="col-span-6">
+                    <label
+                      htmlFor="Email"
+                      className="block text-xs font-medium text-gray-700"
+                    >
+                      Email
+                    </label>
 
-                  <input
-                    type="email"
-                    id="Email"
-                    className="mt-1 w-full rounded-md border-gray-200 shadow-sm sm:text-sm"
-                  />
-                </div>
+                    <input
+                      type="email"
+                      id="Email"
+                      className="mt-1 w-full rounded-md border-gray-200 shadow-sm sm:text-sm"
+                    />
+                  </div>
 
-                <div className="col-span-6">
-                  <label
-                    htmlFor="Phone"
-                    className="block text-xs font-medium text-gray-700"
-                  >
-                    Phone
-                  </label>
+                  <div className="col-span-6">
+                    <label
+                      htmlFor="Phone"
+                      className="block text-xs font-medium text-gray-700"
+                    >
+                      Phone
+                    </label>
 
-                  <input
-                    type="tel"
-                    id="Phone"
-                    className="mt-1 w-full rounded-md border-gray-200 shadow-sm sm:text-sm"
-                  />
-                </div>
+                    <input
+                      type="tel"
+                      id="Phone"
+                      className="mt-1 w-full rounded-md border-gray-200 shadow-sm sm:text-sm"
+                    />
+                  </div>
 
-                <fieldset className="col-span-6">
-                  <legend className="block text-sm font-medium text-gray-700">
-                    Card Details
-                  </legend>
+                  <fieldset className="col-span-6">
+                    <legend className="block text-sm font-medium text-gray-700">
+                      Card Details
+                    </legend>
 
-                  <div className="mt-1 -space-y-px rounded-md bg-white shadow-sm">
-                    <div>
-                      <label htmlFor="CardNumber" className="sr-only">
-                        {" "}
-                        Card Number{" "}
-                      </label>
-
-                      <input
-                        type="text"
-                        id="CardNumber"
-                        placeholder="Card Number"
-                        className="relative mt-1 w-full rounded-t-md border-gray-200 focus:z-10 sm:text-sm"
-                      />
-                    </div>
-
-                    <div className="flex">
-                      <div className="flex-1">
-                        <label htmlFor="CardExpiry" className="sr-only">
+                    <div className="mt-1 -space-y-px rounded-md bg-white shadow-sm">
+                      <div>
+                        <label htmlFor="CardNumber" className="sr-only">
                           {" "}
-                          Card Expiry{" "}
+                          Card Number{" "}
                         </label>
 
                         <input
                           type="text"
-                          id="CardExpiry"
-                          placeholder="Expiry Date"
-                          className="relative w-full rounded-es-md border-gray-200 focus:z-10 sm:text-sm"
+                          id="CardNumber"
+                          placeholder="Card Number"
+                          className="relative mt-1 w-full rounded-t-md border-gray-200 focus:z-10 sm:text-sm"
                         />
                       </div>
 
-                      <div className="-ms-px flex-1">
-                        <label htmlFor="CardCVC" className="sr-only">
+                      <div className="flex">
+                        <div className="flex-1">
+                          <label htmlFor="CardExpiry" className="sr-only">
+                            {" "}
+                            Card Expiry{" "}
+                          </label>
+
+                          <input
+                            type="text"
+                            id="CardExpiry"
+                            placeholder="Expiry Date"
+                            className="relative w-full rounded-es-md border-gray-200 focus:z-10 sm:text-sm"
+                          />
+                        </div>
+
+                        <div className="-ms-px flex-1">
+                          <label htmlFor="CardCVC" className="sr-only">
+                            {" "}
+                            Card CVC{" "}
+                          </label>
+
+                          <input
+                            type="text"
+                            id="CardCVC"
+                            placeholder="CVC"
+                            className="relative w-full rounded-ee-md border-gray-200 focus:z-10 sm:text-sm"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </fieldset>
+
+                  <fieldset className="col-span-6">
+                    <legend className="block text-sm font-medium text-gray-700">
+                      Billing Address
+                    </legend>
+
+                    <div className="mt-1 -space-y-px rounded-md bg-white shadow-sm">
+                      <div>
+                        <label htmlFor="Country" className="sr-only">
+                          Country
+                        </label>
+
+                        <select
+                          id="Country"
+                          className="relative w-full rounded-t-md border-gray-200 focus:z-10 sm:text-sm"
+                        >
+                          <option>England</option>
+                          <option>Wales</option>
+                          <option>Scotland</option>
+                          <option>France</option>
+                          <option>Belgium</option>
+                          <option>Japan</option>
+                          <option>Bangladesh</option>
+                        </select>
+                      </div>
+
+                      <div>
+                        <label className="sr-only" htmlFor="PostalCode">
                           {" "}
-                          Card CVC{" "}
+                          ZIP/Post Code{" "}
                         </label>
 
                         <input
                           type="text"
-                          id="CardCVC"
-                          placeholder="CVC"
-                          className="relative w-full rounded-ee-md border-gray-200 focus:z-10 sm:text-sm"
+                          id="PostalCode"
+                          placeholder="ZIP/Post Code"
+                          className="relative w-full rounded-b-md border-gray-200 focus:z-10 sm:text-sm"
                         />
                       </div>
                     </div>
+                  </fieldset>
+
+                  <div className="col-span-6">
+                    <button className="block w-full rounded-md bg-gray-600 p-2.5 text-sm text-white transition hover:shadow-lg" >
+                      Pay Now
+                    </button>
                   </div>
-                </fieldset>
-
-                <fieldset className="col-span-6">
-                  <legend className="block text-sm font-medium text-gray-700">
-                    Billing Address
-                  </legend>
-
-                  <div className="mt-1 -space-y-px rounded-md bg-white shadow-sm">
-                    <div>
-                      <label htmlFor="Country" className="sr-only">
-                        Country
-                      </label>
-
-                      <select
-                        id="Country"
-                        className="relative w-full rounded-t-md border-gray-200 focus:z-10 sm:text-sm"
-                      >
-                        <option>England</option>
-                        <option>Wales</option>
-                        <option>Scotland</option>
-                        <option>France</option>
-                        <option>Belgium</option>
-                        <option>Japan</option>
-                        <option>Bangladesh</option>
-                      </select>
-                    </div>
-
-                    <div>
-                      <label className="sr-only" htmlFor="PostalCode">
-                        {" "}
-                        ZIP/Post Code{" "}
-                      </label>
-
-                      <input
-                        type="text"
-                        id="PostalCode"
-                        placeholder="ZIP/Post Code"
-                        className="relative w-full rounded-b-md border-gray-200 focus:z-10 sm:text-sm"
-                      />
-                    </div>
-                  </div>
-                </fieldset>
-
-                <div className="col-span-6">
-                  <button className="block w-full rounded-md bg-gray-600 p-2.5 text-sm text-white transition hover:shadow-lg" >
-                    Pay Now
-                  </button>
-                </div>
-              </form>
+                </form>
+              </div>
             </div>
-          </div>
 
           <div className="bg-gray-50 py-12 md:py-24">
             <div className="mx-auto max-w-lg space-y-8 px-4 lg:px-8">
@@ -310,8 +312,6 @@ export default function Checkout() {
               </div>
             </div>
           </div>
-
-         
         </div>
       </section>
     </div>

@@ -74,33 +74,33 @@ export default function RootLayout({ children }) {
               <div className="flex items-center">
                 <div className="flex items-center border-x border-gray-100">
                 <span className="border-e border-e-gray-100">
-  <a
-    onClick={() => setGlobals({ ...globals,openCartDrawer: true })}
-    href={() => false}
-    className="relative hover:cursor-pointer grid h-16 w-16 place-content-center border-b-4 border-transparent hover:border-gray-700"
-  >
-    <div>
-    <svg
-      className="relative h-5 w-5"
-      fill="none"
-      viewBox="0 0 24 24"
-      stroke="currentColor"
-      xmlns="http://www.w3.org/2000/svg"
-    >
-      <path
-        strokeLinecap="round"
-        strokeLinejoin="round"
-        strokeWidth="2"
-        d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"
-      />
-    </svg>
-    <span className="p-1 bg-gray-700 text-white rounded-full h-6 w-6 text-center text-xs leading-4 absolute top-3 right-1">
-      {globals.cartItems.length}
-    </span>
-    </div>
-    <span className="sr-only">Cart</span>
-  </a>
-</span>
+                  <a
+                    onClick={() => setGlobals({ ...globals,openCartDrawer: true })}
+                    href={() => false}
+                    className="relative hover:cursor-pointer grid h-16 w-16 place-content-center border-b-4 border-transparent hover:border-gray-700"
+                  >
+                    <div>
+                    <svg
+                      className="relative h-5 w-5"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth="2"
+                        d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"
+                      />
+                    </svg>
+                    <span className="p-1 bg-gray-700 text-white rounded-full h-6 w-6 text-center text-xs leading-4 absolute top-3 right-1">
+                      {globals.cartItems.length}
+                    </span>
+                    </div>
+                    <span className="sr-only">Cart</span>
+                  </a>
+                  </span>
 
                   <span className="border-e border-e-gray-100">
                     <a
